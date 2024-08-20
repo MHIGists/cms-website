@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#page-bg {
+    background-color: #421869;
+}
+
+/* Style for links */
+.cms-link, .cms-dashboard-link {
+    text-decoration: none; /* Remove underline */
+    color: #421869; /* Default link color */
+    background-color: white; /* Light gray background on hover */
+    width: 20%;
+}
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Style for the container */
+.app-background {
+    background-color: #421869; /* Light gray background for container */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Style for individual links */
+.app-background a {
+    display: block; /* Make links block-level for better spacing */
+    padding: 10px 20px; /* Add padding to links */
+    margin-top: 10px; /* Add some space between links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+img{
+    margin-top: 2px;
+    width: 150px;
+    height: 85px;
+}
+#login{
+    padding-left: 5px;
+    width: 540px;
+    height: 350px;
+}
+#login-body{
+    background-color: #421869;
+}
+nav{
+    background-color: #721CB8;
+}
+#list:hover{
+    background-color: gray;
+}
+/* CSS for Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#copy-cms{
+    margin-bottom: 10px;
+
+}
